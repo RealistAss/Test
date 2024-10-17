@@ -1,4 +1,4 @@
-def send_mail(message, recipient, sender = 'university.help@gmail.com'):
+def send_mail(message, recipient,*, sender = 'university.help@gmail.com'):
 
     if sender == recipient:
         print("Нельзя отправить письмо самому себе!")
@@ -16,4 +16,4 @@ def send_mail(message, recipient, sender = 'university.help@gmail.com'):
 send_mail('Alpen gold', 'university.help@gmail.com', )
 send_mail('Milka', 'Ilyamolot.mail.ru')
 send_mail('Dove', 'Ilyamolot@mail.ru')
-send_mail('Crispy', 'Ilyamolot@mail.ru', 'yamolot@mail.ru' )
+send_mail('Crispy', 'Ilyamolot@mail.ru', sender ='yamolot@mail.ru' )
